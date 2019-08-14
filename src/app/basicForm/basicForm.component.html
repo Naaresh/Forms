@@ -8,12 +8,12 @@
         <div class="alert alert-danger" [hidden]="name.valid || name.pristine">Name is required</div>
       </div>
       <div class="form-group">
-        <label for="alterEgo">Alter Ego</label>
+        <label for="alterEgo">Age</label>
         <input type="text" class="form-control" name="alterEgo" ngModel #alterEgo="ngModel" required>
-        <div class="alert alert-danger" [hidden]="alterEgo.valid || alterEgo.pristine">Alter Ego is required</div>
+        <div class="alert alert-danger" [hidden]="alterEgo.valid || alterEgo.pristine">Age is required</div>
       </div>
       <div class="form-group">
-        <label for="power">Hero Power</label>
+        <label for="power">Select from Dropdown</label>
         <select class="form-control" name="power" ngModel #power="ngModel" required>
           <option *ngFor="let p of powers" [value]="p">{{ p }}</option>
         </select>
@@ -29,11 +29,11 @@
       <div class="col-md-10 pull-left">{{ form.name }}</div>
     </div>
     <div class="row">
-      <div class="col-md-2">Alter Ego</div>
+      <div class="col-md-2">Age</div>
       <div class="col-md-10 pull-left">{{ form.alterEgo }}</div>
     </div>
     <div class="row">
-      <div class="col-md-2">Power</div>
+      <div class="col-md-2">Selected</div>
       <div class="col-md-10 pull-left">{{ form.power }}</div>
     </div>
     <br />

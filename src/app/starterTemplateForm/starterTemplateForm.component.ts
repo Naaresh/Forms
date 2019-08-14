@@ -12,7 +12,7 @@ export class StarterTemplateFormComponent implements OnInit {
 
     ngOnInit() { 
         this.customer = {
-            firstName: 'Fred Template'
+            firstName: 'Please Enter Something'
         };
     }
 
