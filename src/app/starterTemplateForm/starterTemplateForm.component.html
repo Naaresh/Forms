@@ -15,4 +15,11 @@
     Valid: {{ firstName.valid}}
     <br />
     Touched: {{ firstName.touched }}
+
+    <h2>Employee List</h2>
+
+    <ul *ngFor="let employee of employees">
+         <li> {{employee.name}} . {{employee.name}} - {{employee.age}}</li>
+    </ul>
+
 </form>
