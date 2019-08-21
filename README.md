@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Angular/TypeScript Forms
 
 This code sample demonstrates how Angular template-driven forms and 
